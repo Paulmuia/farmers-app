@@ -31,41 +31,43 @@ class DetailedPage extends StatelessWidget {
         ],
         backgroundColor: Colors.greenAccent,
       ),
-      body: Column(
-        
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SizedBox(
-            height: 20,
-          ),
-          Container(
-            height: 40,
-            width: double.maxFinite,
-            color: Colors.greenAccent,
-            child: const Center(
-              child: Text('Enumeration Geography'),
+      body: SingleChildScrollView(
+        child: Column(
+          
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(
+              height: 20,
             ),
-          ),
-          SizedBox(height: 10,),
-          const RichTexts(
-              text1: ' County', text2: '                   kericho'),
-          const RichTexts(
-              text1: ' Constituency', text2: '                    BELGUT '),
-          const RichTexts(
-              text1: ' Division',
-              text2: '                                        Belgut'),
-          const RichTexts(
-              text1: ' Sub County', text2: '                         BELGUT'),
-          const RichTexts(
-              text1: ' Ward',
-              text2: '                                     Kapsuter'),
-          const RichTexts(
-              text1: ' Sub Location',
-              text2: '         SOSIOT'),
-          const RichTexts(
-              text1: ' Vilage unit name',
-              text2: '                                  Kimsn'),
-        ],
+            Container(
+              height: 40,
+              width: double.maxFinite,
+              color: Colors.greenAccent,
+              child: const Center(
+                child: Text('Enumeration Geography'),
+              ),
+            ),
+            SizedBox(height: 10,),
+            const RichTexts(
+                text1: ' County', text2: '                   kericho'),
+            const RichTexts(
+                text1: ' Constituency', text2: '                    BELGUT '),
+            const RichTexts(
+                text1: ' Division',
+                text2: '                                        Belgut'),
+            const RichTexts(
+                text1: ' Sub County', text2: '                         BELGUT'),
+            const RichTexts(
+                text1: ' Ward',
+                text2: '                                     Kapsuter'),
+            const RichTexts(
+                text1: ' Sub Location',
+                text2: '         SOSIOT'),
+            const RichTexts(
+                text1: ' Vilage unit name',
+                text2: '                                  Kimsn'),
+          ],
+        ),
       ),
     );
   }

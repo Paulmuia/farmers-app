@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class CustomListTile extends StatelessWidget {
   final Widget child;
   final Widget title;
+  final void Function()? onTap; // Declare onTap parameter
 
   const CustomListTile({
     Key? key,
     required this.child,
     required this.title,
+    required this.onTap, // Make onTap required
   }) : super(key: key);
 
   @override
@@ -28,6 +30,7 @@ class CustomListTile extends StatelessWidget {
         ],
       ),
       child: ListTile(
+        onTap: onTap, // Pass onTap callback to ListTile
         leading: child,
         title: title,
         // Modify the style for the title text

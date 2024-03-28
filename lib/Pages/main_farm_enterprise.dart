@@ -4,14 +4,14 @@ import 'package:farming/widgets/custom_form.dart';
 import 'package:flutter/material.dart';
 
 
-class PrimaryFarmHolding extends StatefulWidget {
-  const PrimaryFarmHolding({super.key});
+class MainFarmEnterprise extends StatefulWidget {
+  const MainFarmEnterprise({super.key});
 
   @override
-  State<PrimaryFarmHolding> createState() => _PrimaryFarmHoldingState();
+  State<MainFarmEnterprise> createState() => _MainFarmEnterpriseState();
 }
 
-class _PrimaryFarmHoldingState extends State<PrimaryFarmHolding> {
+class _MainFarmEnterpriseState extends State<MainFarmEnterprise> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -10,6 +10,7 @@ class WardSetup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(
         leading: const Icon(Icons.menu),
         title: const Text('Home'),
@@ -30,36 +31,38 @@ class WardSetup extends StatelessWidget {
         ],
         backgroundColor: Colors.greenAccent,
       ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 20,
-            ),
-            CustomFormField2(text1: "KERICHO", labelText: "County (*)"),
-            SizedBox(
-              height: 8,
-            ),
-            CustomFormField2(text1: "BELGUT", labelText: "Sub-County (*)"),
-            SizedBox(
-              height: 8,
-            ),
-            CustomFormField2(text1: "KAPSURER", labelText: "Ward (*)"),
-            SizedBox(
-              height: 25,
-            ),
-        
-                      SizedBox(
-                        height: 60,
-                        width: 250,
-                        child: CustomFormField2(text1: "345635425785483", labelText: "Enumerate Area No (*)")),
-            SizedBox(
-              height: 25,
-            ),
-            CustomContainer(text: "SAVE ACTIVE WARD"),
-            SizedBox(height: 10,),
-            CustomContainer(text: "TEST CREDENTIALS AND DOWNLOAD FARMERS"),
-          ],
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 20,
+              ),
+              CustomFormField2(text1: "KERICHO", labelText: "County (*)"),
+              SizedBox(
+                height: 8,
+              ),
+              CustomFormField2(text1: "BELGUT", labelText: "Sub-County (*)"),
+              SizedBox(
+                height: 8,
+              ),
+              CustomFormField2(text1: "KAPSURER", labelText: "Ward (*)"),
+              SizedBox(
+                height: 25,
+              ),
+          
+                        SizedBox(
+                          height: 60,
+                          width: 250,
+                          child: CustomFormField2(text1: "345635425785483", labelText: "Enumerate Area No (*)")),
+              SizedBox(
+                height: 25,
+              ),
+              CustomContainer(text: "SAVE ACTIVE WARD"),
+              SizedBox(height: 10,),
+              CustomContainer(text: "TEST CREDENTIALS AND DOWNLOAD FARMERS"),
+            ],
+          ),
         ),
       ),
     );
